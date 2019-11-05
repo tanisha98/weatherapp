@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
+const port = process.env.PORT||3000 //heroku port
 const hbs= require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
@@ -116,6 +117,6 @@ res.render('404',{
     error: 'Page not found'
 })
 })
-app.listen(3000, ()=>{     //start up server:IMP
-    console.log("server is up on port 3000")
+app.listen(port, ()=>{     //start up server:IMP
+    console.log("server is up on port"+port)
 })

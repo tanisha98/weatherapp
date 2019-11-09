@@ -2,13 +2,14 @@ body {
     
     font-family: arial;
     margin: 0 auto;
-    padding: 0 16px;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
      margin: 0;
     background-color: #ffd8d8;
+}
+#first{
+    padding:0 16px;
 }
 .main-content {
     flex-grow: 1;
@@ -86,7 +87,7 @@ input, button
 #main{
     width: 100%;
     max-width: 790px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 a:hover {
     color:black !important;
@@ -173,8 +174,8 @@ button span:before, button span:after
 #s-cover:hover #s-circle
 {
     top: -12px;
-    width: 49px;
-    height: 12px;
+    width: 48px;
+    height: 8px;
     border-width: 0;
     background-color: #fff;
     border-radius: 20px;
@@ -201,8 +202,7 @@ button span:before, button span:after
     transform: rotateZ(-52deg);
 }
 #s-cover:hover button span:before, #s-cover:hover button span:after
-{
-    right: 15px;
-    width: 38px;
-    background-color: #fff;
+{right: 33px;
+    width: 33px;
+    background-color: #fff;f;
 }

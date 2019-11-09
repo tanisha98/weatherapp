@@ -21,24 +21,17 @@ app.use(express.static(directoryPath))
 app.get('',(req,res)=>{
     res.render('index',{
         title: 'weather app',
-        name: 'tanisha'
+        name: 'Tanisha Singh'
     })
 })
 
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About me',
-        name : 'tanisha'
+        name : 'Tanisha Singh'
     })
 })
 
-app.get('/help',(req,res)=>{
-    res.render('help',{
-        title:'Help',
-        msg:'This is todays forecast',
-        name : 'tanisha'
-    })
-})
 app.get('',(req,res)=>{  //(route,function:what to send back:request,respond)
 res.send('Hello express!')
 
@@ -101,19 +94,19 @@ return res.send({
        product:[]
     })
 })
-app.get('/help/*',(req,res)=>{
-    res.render('404',{
-        title:'404',
-        name : 'Tanisha',
-        error: 'Help article not found'
-    })
-    })
+// app.get('/help/*',(req,res)=>{
+//     res.render('404',{
+//         title:'404',
+//         name : 'Tanisha Singh',
+//         error: 'Help article not found'
+//     })
+//     })
 
 
 app.get('*',(req,res)=>{
 res.render('404',{
     title:'404',
-    name : 'Tanisha',
+    name : 'Tanisha Singh',
     error: 'Page not found'
 })
 })

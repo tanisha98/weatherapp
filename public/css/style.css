@@ -17,7 +17,7 @@ footer {
     color: #888888;
     border-top: 2px solid #3d3c3c;
     padding: 16px 0;
-    position: fixed;
+  
     left: 0;
     bottom: 0;
     width: 100%;
@@ -58,7 +58,7 @@ header a {
 input, button
 {
     color: #fff;
-    font-family: Nunito;
+    font-family:arial;
     padding: 0;
     margin: 0;
     border: 0;
@@ -66,17 +66,27 @@ input, button
 }
 
 #cover
-{
-    /* position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0; */
-    width: 100%;
-    padding: 15px;
+{  
+    -ms-flex-pack: justify;
+
     background-color: #ff7575;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
-    transform: scale(0.6);
+    box-shadow: 0 2px 62px #ff7c7c, 0 0 0 10px #ffffffeb;
+
+    display: -ms-flexbox;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 34px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#main{
+    width: 100%;
+    max-width: 790px;
+    padding-top: 30px;
 }
 a:hover {
     color:black !important;
@@ -84,16 +94,18 @@ a:hover {
 }
 form
 {
-    height: 96px;
+    height: 68px;
 }
 
 input[type="text"]
 {
-    width: 100%;
-    height: 96px;
-    font-size: 60px;
-    line-height: 1;
-}
+       margin-top: -20px;
+       margin-left: 25px;
+       width: 100%;
+       height: 68px;
+       font-size: 40px;
+       line-height: 1;
+   }
 
 input[type="text"]::placeholder
 {
@@ -118,13 +130,13 @@ button
 #s-circle
 {
     position: relative;
-    top: -7px;
+    top: -17px;
     left: 0;
-    width: 66px;
-    height: 68px;
+    width: 35px;
+    height: 36px;
     margin-top: 0;
-    border-width: 15px;
-    border: 15px solid #fff;
+    border-width: 5px;
+    border: 7px solid #fff;
     background-color: transparent;
     border-radius: 50%;
     transition: 0.5s ease all;
@@ -133,8 +145,8 @@ button
 button span
 {
     position: absolute;
-    top: 71px;
-    left: 39px;
+    top: 28px;
+    left: 10px;
     display: block;
     width: 48px;
     height: 18px;
@@ -148,10 +160,10 @@ button span:before, button span:after
 {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
-    width: 45px;
-    height: 15px;
+    width: 28px;
+    height: 9px;
     background-color: #fff;
     border-radius: 10px;
     transform: rotateZ(0);
@@ -160,9 +172,9 @@ button span:before, button span:after
 
 #s-cover:hover #s-circle
 {
-    top: -1px;
-    width: 67px;
-    height: 15px;
+    top: -12px;
+    width: 49px;
+    height: 12px;
     border-width: 0;
     background-color: #fff;
     border-radius: 20px;
@@ -170,8 +182,8 @@ button span:before, button span:after
 
 #s-cover:hover span
 {
-    top: 50%;
-    left: 56px;
+    top: 33%;
+    left: 67px;
     width: 25px;
     margin-top: -9px;
     transform: rotateZ(0);
@@ -190,7 +202,7 @@ button span:before, button span:after
 }
 #s-cover:hover button span:before, #s-cover:hover button span:after
 {
-    right: -6px;
-    width: 40px;
+    right: 15px;
+    width: 38px;
     background-color: #fff;
 }

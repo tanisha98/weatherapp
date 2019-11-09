@@ -7,7 +7,9 @@ body {
      margin: 0;
     background-color: #ffd8d8;
 }
-
+#first{
+    padding:0 16px;
+}
 .main-content {
     flex-grow: 1;
     padding: 0 16px;

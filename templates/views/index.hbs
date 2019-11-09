@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+           <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <title>Weather</title>
         <link rel="icon" href="/img/weather.png">
         <link rel="stylesheet" href="/css/style.css">
@@ -10,14 +16,26 @@
     <body>
         <div class="main-content">
    {{>header}}
-   <p> Use this site to get weather</p>
-
-   <form>
+   <p> Want to know the weather ? Go ahead and search!</p>
+<div id="cover">
+  <form method="get" action="">
+    <div class="tb">
+      <div class="td"><input type="text" placeholder="Search" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+   {{!-- <form>
        
 
        <input placeholder='Location'>
        <button>Search</button>
-   </form>
+   </form> --}}
 <p id="one"></p>
        <p id ="two"></p>
         </div>

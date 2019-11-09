@@ -72,8 +72,7 @@ input, button
     -ms-flex-pack: justify;
 
     background-color: #ff7575;
-    box-shadow: 0 2px 62px #ff7c7c, 0 0 0 10px #ffffffeb;
-
+    box-shadow:0 0px 12px #ff7c7c, 0 0 0 8px #ffffffeb;
     display: -ms-flexbox;
     width: 100%;
     -ms-flex-pack: justify;
